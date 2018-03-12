@@ -61,7 +61,7 @@ database.ref("/players/").on("value", function(snapshot) {
 		$("#playerPanel1").removeClass("playerPanelTurn");
 		$("#playerPanel2").removeClass("playerPanelTurn");
 		database.ref("/outcome/").remove();
-		$("#roundOutcome").html("Rock-Paper-Scissors");
+		$("#roundOutcome").html("Rock Paper Scissors");
 		$("#waitingNotice").html("");
 		$("#player1Stats").html("Win: 0, Loss: 0, Tie: 0");
 	}
@@ -88,7 +88,7 @@ database.ref("/players/").on("value", function(snapshot) {
 		$("#playerPanel1").removeClass("playerPanelTurn");
 		$("#playerPanel2").removeClass("playerPanelTurn");
 		database.ref("/outcome/").remove();
-		$("#roundOutcome").html("Rock-Paper-Scissors");
+		$("#roundOutcome").html("Rock Paper Scissors");
 		$("#waitingNotice").html("");
 		$("#player2Stats").html("Win: 0, Loss: 0, Tie: 0");
 	}
@@ -309,21 +309,21 @@ function rpsCompare() {
 			// Tie
 			console.log("tie");
 
-			database.ref().child("/outcome/").set("Tie game!");
+			database.ref().child("/outcome/").set("You both chose the same! Tie game!");
 			database.ref().child("/players/player1/tie").set(player1.tie + 1);
 			database.ref().child("/players/player2/tie").set(player2.tie + 1);
 		} else if (player2.choice === "Paper") {
 			// Player2 wins
 			console.log("paper wins");
 
-			database.ref().child("/outcome/").set(player2.name + "Paper wins!");
+			database.ref().child("/outcome/").set(player2.name + "'s Paper wins!");
 			database.ref().child("/players/player1/loss").set(player1.loss + 1);
 			database.ref().child("/players/player2/win").set(player2.win + 1);
 		} else { // scissors
 			// Player1 wins
 			console.log("rock wins");
 
-			database.ref().child("/outcome/").set("Rock wins!");
+			database.ref().child("/outcome/").set(player1Name + "'s Rock wins!");
 			database.ref().child("/players/player1/win").set(player1.win + 1);
 			database.ref().child("/players/player2/loss").set(player2.loss + 1);
 		}
@@ -331,7 +331,7 @@ function rpsCompare() {
 	} else if (player1.choice === "Paper") {
 		if (player2.choice === "Rock") {
 			// Player1 wins
-			console.log("paper wins");
+			console.log(player1.name + "'s paper wins");
 
 			database.ref().child("/outcome/").set("Paper wins!");
 			database.ref().child("/players/player1/win").set(player1.win + 1);
@@ -340,14 +340,14 @@ function rpsCompare() {
 			// Tie
 			console.log("tie");
 
-			database.ref().child("/outcome/").set("Tie game!");
+			database.ref().child("/outcome/").set("You both chose the same! Tie game!");
 			database.ref().child("/players/player1/tie").set(player1.tie + 1);
 			database.ref().child("/players/player2/tie").set(player2.tie + 1);
 		} else { // Scissors
 			// Player2 wins
 			console.log("scissors win");
 
-			database.ref().child("/outcome/").set("Scissors win!");
+			database.ref().child("/outcome/").set(player2Name + "'s Scissors win!");
 			database.ref().child("/players/player1/loss").set(player1.loss + 1);
 			database.ref().child("/players/player2/win").set(player2.win + 1);
 		}
@@ -357,21 +357,21 @@ function rpsCompare() {
 			// Player2 wins
 			console.log("rock wins");
 
-			database.ref().child("/outcome/").set("Rock wins!");
+			database.ref().child("/outcome/").set(player2Name + "'s Rock wins!");
 			database.ref().child("/players/player1/loss").set(player1.loss + 1);
 			database.ref().child("/players/player2/win").set(player2.win + 1);
 		} else if (player2.choice === "Paper") {
 			// Player1 wins
 			console.log("scissors win");
 
-			database.ref().child("/outcome/").set("Scissors win!");
+			database.ref().child("/outcome/").set(player1Name + "'s Scissors win!");
 			database.ref().child("/players/player1/win").set(player1.win + 1);
 			database.ref().child("/players/player2/loss").set(player2.loss + 1);
 		} else {
 			// Tie
 			console.log("tie");
 
-			database.ref().child("/outcome/").set("Tie game!");
+			database.ref().child("/outcome/").set("You both chose the same! Tie game!");
 			database.ref().child("/players/player1/tie").set(player1.tie + 1);
 			database.ref().child("/players/player2/tie").set(player2.tie + 1);
 		}
