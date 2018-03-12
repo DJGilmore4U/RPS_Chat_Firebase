@@ -333,7 +333,7 @@ function rpsCompare() {
 			// Player1 wins
 			console.log(player1.name + "'s paper wins");
 
-			database.ref().child("/outcome/").set("Paper wins!");
+			database.ref().child("/outcome/").set(player1Name + "'s Paper wins!");
 			database.ref().child("/players/player1/win").set(player1.win + 1);
 			database.ref().child("/players/player2/loss").set(player2.loss + 1);
 		} else if (player2.choice === "Paper") {
