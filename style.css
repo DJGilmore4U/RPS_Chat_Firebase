@@ -18,12 +18,22 @@ body {
 
 .jumbotron h1 {
 	font-size: 4em;
-    color: white;
+	color: white;
+	text-shadow:
+	-1px -1px 0 #000,  
+	 1px -1px 0 #000,
+	 -1px 1px 0 #000,
+	  1px 1px 0 #000;
 }
 
 .jumbotron h2 {
 	font-size: 2em;
-    color:white;
+	color:white;
+	text-shadow:
+	-1px -1px 0 #000,  
+	 1px -1px 0 #000,
+	 -1px 1px 0 #000,
+	  1px 1px 0 #000;
 }
 
 .formPanel {
@@ -42,6 +52,11 @@ body {
   margin-left: 33%;
   border-radius: 10px;
   border-color: black;
+  text-shadow:
+  -1px -1px 0 rgb(255, 255, 255),  
+   1px -1px 0 rgb(255, 255, 255),
+   -1px 1px 0 rgb(255, 255, 255),
+	1px 1px 0 rgb(255, 255, 255);
   
 }
 
@@ -58,6 +73,11 @@ body {
 	border-radius: 10px;
 	color: #000000;
 	font-weight: normal;
+	text-shadow:
+	-1px -1px 0 rgb(255, 255, 255),  
+	 1px -1px 0 rgb(255, 255, 255),
+	 -1px 1px 0 rgb(255, 255, 255),
+	  1px 1px 0 rgb(255, 255, 255);
 }
 
 .panel {
@@ -89,6 +109,11 @@ body {
 	color: #000000;
 	margin: 0.5em 0em 0em 0em;
 	font-weight: bold;
+	text-shadow:
+	-1px -1px 0 rgb(255, 255, 255),  
+	 1px -1px 0 rgb(255, 255, 255),
+	 -1px 1px 0 rgb(255, 255, 255),
+	  1px 1px 0 rgb(255, 255, 255);
 }
 
 .playerPanel .panelOption {
@@ -98,6 +123,11 @@ body {
 	font-weight: normal;
 	font-size: 1.5em;
 	color: #000000;
+	text-shadow:
+	-1px -1px 0 rgb(255, 255, 255),  
+	 1px -1px 0 rgb(255, 255, 255),
+	 -1px 1px 0 rgb(255, 255, 255),
+	  1px 1px 0 rgb(255, 255, 255);
 }
 
 .playerPanel .panelOption .option {
@@ -120,6 +150,11 @@ body {
 	font-size: 1.5em;
 	color: #000000;
 	border-radius: 0px 0px 10px 10px;
+	text-shadow:
+	-1px -1px 0 rgb(255, 255, 255),  
+	 1px -1px 0 rgb(255, 255, 255),
+	 -1px 1px 0 rgb(255, 255, 255),
+	  1px 1px 0 rgb(255, 255, 255);
 }
 
 .gamePanel {
@@ -133,6 +168,11 @@ body {
 	font-size: 3.5em;
 	color: #000000;
 	margin: .99em 0em 0em 0em;
+	text-shadow:
+	-1px -1px 0 rgb(255, 255, 255),  
+	 1px -1px 0 rgb(255, 255, 255),
+	 -1px 1px 0 rgb(255, 255, 255),
+	  1px 1px 0 rgb(255, 255, 255);
 }
 
 #waitingNotice {
@@ -170,6 +210,11 @@ body {
 	text-align: center;
 	font-weight: bold;
 	padding: 0.5em 0em 0.5em 0em;
+	text-shadow:
+	-1px -1px 0 rgb(255, 255, 255),  
+	 1px -1px 0 rgb(255, 255, 255),
+	 -1px 1px 0 rgb(255, 255, 255),
+	  1px 1px 0 rgb(255, 255, 255);
 }
 
 #chat-input {
@@ -200,24 +245,49 @@ body {
 	font-weight: normal;
 	float: right;
 	border:4px solid black;
+	text-shadow:
+	-1px -1px 0 rgb(255, 255, 255),  
+	 1px -1px 0 rgb(255, 255, 255),
+	 -1px 1px 0 rgb(255, 255, 255),
+	  1px 1px 0 rgb(255, 255, 255);
 }
 
 .chatColor1 {
 	color: #000000;
+	text-shadow:
+	-1px -1px 0 rgb(253, 2, 2),  
+	 1px -1px 0 rgb(253, 2, 2),
+	 -1px 1px 0 rgb(253, 2, 2),
+	  1px 1px 0 rgb(253, 2, 2);
 }
 
 .chatColor2 {
 	color: #000000;
+	text-shadow:
+	-1px -1px 0 rgb(31, 4, 185),  
+	 1px -1px 0 rgb(31, 4, 185),
+	 -1px 1px 0 rgb(31, 4, 185),
+	  1px 1px 0 rgb(31, 4, 185);
 }
 
 .chatColorDisconnected {
 	color: #a10808;
 	font-style: italic bold;
+	text-shadow:
+	-1px -1px 0 rgb(3, 3, 3),  
+	 1px -1px 0 rgb(3, 3, 3),
+	 -1px 1px 0 rgb(3, 3, 3),
+	  1px 1px 0 rgb(3, 3, 3);
 }
 
 .chatColorJoined {
 	color: rgb(0, 0, 0);
 	font-style: italic bold;
+	text-shadow:
+	-1px -1px 0 rgb(255, 255, 255),  
+	 1px -1px 0 rgb(255, 255, 255),
+	 -1px 1px 0 rgb(255, 255, 255),
+	  1px 1px 0 rgb(255, 255, 255);
 }
 
 #footerSpacer {
@@ -232,4 +302,9 @@ body {
   background-color: #995e06;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-shadow:
+  -1px -1px 0 rgb(255, 255, 255),  
+   1px -1px 0 rgb(255, 255, 255),
+   -1px 1px 0 rgb(255, 255, 255),
+	1px 1px 0 rgb(255, 255, 255);
 }
