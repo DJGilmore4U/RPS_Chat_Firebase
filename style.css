@@ -180,6 +180,11 @@ body {
 	color: #ffffff;
 	font-style: italic;
 	font-weight: normal;
+	text-shadow:
+	-1px -1px 0 rgb(3, 3, 3),  
+	 1px -1px 0 rgb(3, 3, 3),
+	 -1px 1px 0 rgb(3, 3, 3),
+	  1px 1px 0 rgb(3, 3, 3);
 }
 
 
